@@ -1,0 +1,60 @@
+# ----------------------------------------------------------------------
+# Quartus II Directories to Ignore
+# ----------------------------------------------------------------------
+# Compilation databases (can get very large)
+db/
+incremental_db/
+
+# Output files directory (contains compiled bitstreams and massive reports)
+output_files/
+
+# Simulation generated directories (keep your testbenches, but ignore the tool outputs)
+simulation/
+greybox_tmp/
+hc_output/
+.qsys_edit/
+
+# ----------------------------------------------------------------------
+# Quartus User Settings and Logs
+# ----------------------------------------------------------------------
+# Workspace settings (saves your window sizes, opened files, etc. - do not share)
+*.qws
+
+# Compilation reports, logs, and summaries
+*.rpt
+*.smsg
+*.summary
+*.done
+*.jdi
+*.pin
+*.qmsg
+*.errlog
+
+# ----------------------------------------------------------------------
+# Programming Files (Bitstreams)
+# ----------------------------------------------------------------------
+# Generated hardware files (These are built from the source, no need to track)
+*.sof
+*.pof
+*.jam
+*.jbc
+*.ekp
+*.rbf
+
+# ----------------------------------------------------------------------
+# Simulation / ModelSim Files
+# ----------------------------------------------------------------------
+*.vcd
+*.wlf
+modelsim.ini
+work/
+transcript
+
+# ----------------------------------------------------------------------
+# Misc / Backups / OS Files
+# ----------------------------------------------------------------------
+*.bak
+*.old
+*~
+.DS_Store
+Thumbs.db
