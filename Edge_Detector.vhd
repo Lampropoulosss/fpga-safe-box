@@ -16,11 +16,11 @@ begin
     process(clk, reset_n)
     begin
         if reset_n = '0' then
-            reg1 <= '0'; reg2 <= '0';
+            reg1 <= '1'; reg2 <= '1';
         elsif rising_edge(clk) then
             reg1 <= button_in;
             reg2 <= reg1;
         end if;
     end process;
-    pulse_out <= '1' when (reg1 = '1' and reg2 = '0') else '0';
+    pulse_out <= '1' when (reg1 = '0' and reg2 = '1') else '0';
 end Behavioral;
