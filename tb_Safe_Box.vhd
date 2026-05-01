@@ -5,7 +5,6 @@ entity tb_Safe_Box is
 end tb_Safe_Box;
 
 architecture behavior of tb_Safe_Box is
-    -- Σήματα που θα συνδεθούν με το χρηματοκιβώτιο
     signal CLK  : STD_LOGIC := '0';
     signal KEY  : STD_LOGIC_VECTOR(1 downto 0) := "11"; -- Active low/high ανάλογα (το reset_n σου είναι '0' για reset)
     signal SW   : STD_LOGIC_VECTOR(3 downto 0) := "0000";
